@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootTopHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/viewHome"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:background="@drawable/item_bottom_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/man_4140048"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/firstHomeTxt"
+            style="@style/TextViewStyleCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/hello_user"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileIcon" />
+
+        <TextView
+            android:id="@+id/secondHomeTxt"
+            style="@style/TextViewStyleCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_login"
+            android:textColor="@color/color_gray_text"
+            app:layout_constraintStart_toStartOf="@+id/firstHomeTxt"
+            app:layout_constraintTop_toBottomOf="@+id/firstHomeTxt" />
+
+        <TextView
+            android:id="@+id/thirdHomeTxt"
+            style="@style/TextViewStyleCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subHeader_login"
+            android:textColor="@color/color_gray_text"
+            app:layout_constraintStart_toStartOf="@+id/secondHomeTxt"
+            app:layout_constraintTop_toBottomOf="@+id/secondHomeTxt" />
+
+        <com.exam.examrbh.util.customui.CustomViewPager
+            android:id="@+id/viewPager_homeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout_homeFragment" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_homeFragment"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdHomeTxt"
+            app:layout_constraintVertical_bias="0"
+            app:tabBackground="@drawable/capsule_shape"
+            app:tabGravity="start"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabMinWidth="100dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="20dp"
+            app:tabPaddingStart="20dp"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/color_gray_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

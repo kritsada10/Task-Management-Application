@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<GridLayout
+    android:id="@+id/rootGrid"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="4"
+    android:columnCount="3">
+
+
+        <TextView
+            android:id="@+id/pad1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:text="@string/pad1"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/pad2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad2"/>
+
+        <TextView
+            android:id="@+id/pad3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad3"/>
+
+        <TextView
+            android:id="@+id/pad4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad4"/>
+
+        <TextView
+            android:id="@+id/pad5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad5"/>
+
+        <TextView
+            android:id="@+id/pad6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad6"/>
+
+        <TextView
+            android:id="@+id/pad7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad7"/>
+
+        <TextView
+            android:id="@+id/pad8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad8"/>
+
+        <TextView
+            android:id="@+id/pad9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad9"/>
+
+        <TextView
+            android:id="@+id/padBlank"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/pad0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/item_circle_numpad"
+            android:textSize="32sp"
+            android:text="@string/pad0"/>
+
+        <ImageView
+            android:id="@+id/padDel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="45dp"
+            android:src="@drawable/baseline_backspace_24"
+            />
+
+
+</GridLayout>
+
+</layout>
