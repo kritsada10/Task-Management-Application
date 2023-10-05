@@ -1,10 +1,8 @@
 package com.exam.examrbh.util
 
-import android.util.Log
 import java.time.LocalDate
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
-import java.util.Calendar
 
 
 object DateConverter {
@@ -33,12 +31,8 @@ object DateConverter {
     }
 
     private fun getCurrentDate(): LocalDate {
-        val calender = Calendar.getInstance()
-        val year = calender.get(Calendar.YEAR)
-        val month = calender.get(Calendar.MONTH) + 1
-        val day = calender.get(Calendar.DAY_OF_MONTH)
-        val todayDate = "$year-0$month-$day"
-        return LocalDate.parse(todayDate)
+        val current = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+        return LocalDate.parse(current)
     }
 
     private fun getTomorrow(): LocalDate {
