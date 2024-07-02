@@ -1,4 +1,4 @@
-# ExamRBH
+# Task Management Application
 
 - The task list should have the following functions:
 - Group items by date.
